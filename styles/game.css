@@ -251,47 +251,108 @@ div ul li {
 
 .image-title {
     color: #534C64;
-    
+
     font-size: 20px;
-    
+
     font-weight: 500;
-  
+
     /* 150% */
 }
-.card-grid{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     border-radius: 16px;
 
-    
+
 }
-.card-grid img{
+
+.card-grid img {
     position: relative;
-   filter: brightness(100%);
-   
+    filter: brightness(100%);
+
 }
-.card-grid img:hover{
+
+.card-grid img:hover {
     border-radius: 16px;
-   /* box-shadow:20px 20px 10px 30px rgb(6, 12, 6); */
-   filter: brightness(40%);
+    /* box-shadow:20px 20px 10px 30px rgb(6, 12, 6); */
+    filter: brightness(40%);
 }
+
 .card-grid img:hover::after {
     content: "play now";
     position: absolute;
-    top: 100%; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    background-color: rgba(0, 0, 0, 0.8); 
-    color: #fff; 
-    padding: 8px; 
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 8px;
     border-radius: 4px;
     visibility: visible;
     opacity: 1;
 }
+
 /* .online-card-games{
     width: 1400px;
     margin:0 auto;
 } */
+/* instant games */
+
+.play-instant-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.play-instantly {
+    color: #F948B2
+}
+
+.h2ins {
+    color: #0B0223;
+
+    font-size: 48px;
+
+    font-weight: 700;
+    text-align: center;
+
+}
+.pinstant{
+    color: #534C64;
+text-align: center;
+
+font-size: 18px;
+
+font-weight: 400;
+text-align: center;
+
+}
+.instant-img-one{
+    position: relative;
+
+}
+
+
+.instant-img-one img{
+    display: block;
+}
+.instant-img-two{
+    position: absolute;
+    bottom:-290%;
+    right:30%;
+    
+}
+.play-instant{
+    width: 1400px;
+    margin:0 auto;
+    margin-top: 10%;
+}
+
+
+
+
 
 
 @media screen and (max-width:576px) {
@@ -305,7 +366,7 @@ div ul li {
 
         align-content: flex-end;
         flex-wrap: wrap;
-        
+
     }
 
 
@@ -363,20 +424,44 @@ div ul li {
 
     }
 
-    
+
     .gamer-text-content p {
         text-align: center;
         margin-left: 50%;
 
     }
+
     /* game card  */
-    .card-grid{
+    .card-grid {
         grid-template-columns: 1fr;
         padding-left: 25%;
     }
-    .online-card-games{
+
+    .online-card-games {
+        width: 120vh;
+        padding-left: 10%;
+    }
+    .play-instant-container{
+        flex-direction: column;
+
+    }
+    .play-instant-text{
         width:120vh;
         padding-left: 10%;
     }
-
+    .instant-img-one{
+       
+        bottom:-1050%;
+    left:12%;
+    display: block;
+    }
+    .instant-img-two{
+        bottom:-1050%;
+    right:29%;
+    display: block;
+    }
+    .play-instant{
+        width: 120vh;
+        /* padding-left: 10%; */
+    }
 }
