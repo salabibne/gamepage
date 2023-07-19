@@ -413,9 +413,9 @@ footer{
 
 .terms{
     display:grid;
-    grid-template-columns: repeat(6,1fr); 
+    grid-template-columns: repeat(4,1fr); 
     color: white;
-    margin-left: 30%;
+    margin-left: 20%;
     
 }
 .last{
@@ -560,7 +560,20 @@ footer{
         align-content: center;
         justify-content: center; */
     }
-    
+
+    footer{
+    width:120vh;
+    padding-left:30%;
+    padding-right: 30%;
+    /* margin-left: 5%; */
+    }
+    .f-p{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .terms{
+        grid-template-columns: repeat(2,1fr);
+    }
+
 
 
 }
