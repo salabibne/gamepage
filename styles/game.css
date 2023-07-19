@@ -155,7 +155,7 @@ div ul li {
     align-items: center;
     justify-content: space-between;
     max-width: 1300px;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 .gamer-text-content h2 {
@@ -182,6 +182,7 @@ div ul li {
     font-weight: 400;
 
 }
+
 /* .gamer-text-content{
     display: flex;
 } */
@@ -190,7 +191,7 @@ div ul li {
     text-align: center;
     width: 30%;
     margin-left: 53%;
-    padding:20px 40px;
+    padding: 20px 40px;
 
 }
 
@@ -213,6 +214,84 @@ div ul li {
 
 }
 
+/* gamer part done */
+
+/* online card games */
+.online-card-games h2 {
+    color: #0B0223;
+    text-align: center;
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+}
+
+.online-card-games .funnyp {
+    color: #534C64;
+    text-align: center;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+}
+
+.funny {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.image-title {
+    color: #534C64;
+    
+    font-size: 20px;
+    
+    font-weight: 500;
+  
+    /* 150% */
+}
+.card-grid{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    border-radius: 16px;
+
+    
+}
+.card-grid img{
+    position: relative;
+   filter: brightness(100%);
+   
+}
+.card-grid img:hover{
+    border-radius: 16px;
+   /* box-shadow:20px 20px 10px 30px rgb(6, 12, 6); */
+   filter: brightness(40%);
+}
+.card-grid img:hover::after {
+    content: "play now";
+    position: absolute;
+    top: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff; 
+    padding: 8px; 
+    border-radius: 4px;
+    visibility: visible;
+    opacity: 1;
+}
+/* .online-card-games{
+    width: 1400px;
+    margin:0 auto;
+} */
 
 
 @media screen and (max-width:576px) {
@@ -226,6 +305,7 @@ div ul li {
 
         align-content: flex-end;
         flex-wrap: wrap;
+        
     }
 
 
@@ -256,37 +336,47 @@ div ul li {
 
     }
 
-    .goat-img{
+    .goat-img {
         width: 100%;
         height: 50%;
     }
 
-    .gamer-description{
+    .gamer-description {
         flex-direction: column;
     }
-    .gamer-img{
+
+    .gamer-img {
         margin-left: 70%;
-        width:auto;
-        height:50%
+        width: auto;
+        height: 50%
     }
+
     /* .gamer-text-content{
         width:fit-content;
         /* text-align: center;
         margin-left: 40%; */
-        .gamer-description .gamer-text-content{
-        width:120vh;
+    .gamer-description .gamer-text-content {
+        width: 120vh;
         text-align: center;
         padding-left: 10%;
-     
-        
+
+
     }
-    /* .purpose{
-        text-align: start;
-    } */
-    .gamer-text-content p{
+
+    
+    .gamer-text-content p {
         text-align: center;
         margin-left: 50%;
 
     }
-   
-} 
+    /* game card  */
+    .card-grid{
+        grid-template-columns: 1fr;
+        padding-left: 25%;
+    }
+    .online-card-games{
+        width:120vh;
+        padding-left: 10%;
+    }
+
+}
