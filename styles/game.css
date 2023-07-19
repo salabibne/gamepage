@@ -1,6 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700;800&display=swap');
-body{
+
+body {
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -10,172 +10,283 @@ body{
 
 /* nav bar css style */
 
-nav{
-    
-    display:flex;
+nav {
+
+    display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1300px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-div>ul{
-    display:flex;
+
+div>ul {
+    display: flex;
     justify-content: space-between;
-    gap:20px;
+    gap: 20px;
     align-items: center;
-    
+
 
 }
-div ul li a{
+
+div ul li a {
     text-decoration: none;
     color: #3C354F;
 
-font-size: 18px;
+    font-size: 18px;
 
-font-weight: 500;
+    font-weight: 500;
 
 }
-div ul li{
+
+div ul li {
     list-style: none;
 }
-.Gl{
-color: #FF42A5;
-font-size: 45px;
-font-weight: 700;
+
+.Gl {
+    color: #FF42A5;
+    font-size: 45px;
+    font-weight: 700;
 
 
 }
-.nav-gamer{
+
+.nav-gamer {
     color: #0B0223;
 
-font-size: 45px;
+    font-size: 45px;
 
-font-weight: 700;
+    font-weight: 700;
 }
-.gamer-icon{
-    display:flex;
+
+.gamer-icon {
+    display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 }
-.gamer-icon img{
-    height:20px;
+
+.gamer-icon img {
+    height: 20px;
 
 }
-.followus{
+
+.followus {
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    padding:17px;
+    padding: 17px;
 }
+
 /* nav bar done */
 
 /* goat part */
-.goat-part-container{
-    display:flex;
+.goat-part-container {
+    display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(140, 87, 238, 0.03);
-    
+
 }
-.play{
+
+.play {
     color: #0B0223;
-font-size: 48px;
+    font-size: 48px;
 
-font-weight: 600;
+    font-weight: 600;
 
-text-transform: uppercase;
+    text-transform: uppercase;
 }
-.goat{
-    
 
-font-size: 95px;
+.goat {
 
-font-weight: 800;
-background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+
+    font-size: 95px;
+
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
 
 }
-.goat-description{
+
+.goat-description {
     color: #534C64;
 
-font-size: 20px;
+    font-size: 20px;
 
-font-weight: 500;
+    font-weight: 500;
 
 }
-.goat-btn{
-    
+
+.goat-btn {
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-top: 20px;
-   
 
 
-      
-    
+
+
+
 }
-.btn{
+
+.btn {
     padding: 20px 40px;
     border-radius: 35px;
-    background:   #FF42A5;
+    background: #FF42A5;
+    color: #FFF;
+    font-size: 20px;
 }
-.btn-go{
+
+.btn-go {
     padding: 20px 40px;
     border-radius: 35px;
-    background:#4EC5F7;
+    background: #4EC5F7;
+    color: #FFF;
+    font-size: 20px;
 }
 
+/* goat part done */
 
+/* gamer description */
+.gamer-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin:0 auto;
+}
+
+.gamer-text-content h2 {
+    text-align: right;
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.gamer-text-content p {
+
+    color: #534C64;
+    text-align: right;
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+}
+/* .gamer-text-content{
+    display: flex;
+} */
+
+.know {
+    text-align: center;
+    width: 30%;
+    margin-left: 53%;
+    padding:20px 40px;
+
+}
+
+.purpose {
+    color: #534C64;
+    text-align: right;
+
+    font-size: 24px;
+
+    font-weight: 500;
+
+}
+
+.unleash {
+    color: #534C64;
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+}
 
 
 
 @media screen and (max-width:576px) {
-    nav{
+    nav {
         flex-direction: column;
-      
-       justify-items: center;
-       margin:0 auto;
-       
-    
-   
-    align-content: flex-end;
-    flex-wrap: wrap;
-}
 
-    
+        justify-items: center;
+        margin: 0 auto;
 
-    div>ul{
+
+
+        align-content: flex-end;
+        flex-wrap: wrap;
+    }
+
+
+
+    div>ul {
         flex-direction: column;
         gap: 40px;
     }
 
-    .followus{
+    .followus {
         border-radius: 8px;
         background: rgba(11, 2, 35, 0.10);
-        padding:15px;
+        padding: 15px;
         align-items: center;
-      
+
     }
 
 
-     .goat-part-container{
+    .goat-part-container {
         flex-direction: column-reverse;
         justify-items: center;
 
-        
-    } 
-
-    .goat-info{
-        margin-left:60%;
 
     }
-     .goat-img{
-        width:100%;
-        height:50%;
-     }
-    } 
-    
 
+    .goat-info {
+        margin-left: 60%;
+
+    }
+
+    .goat-img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .gamer-description{
+        flex-direction: column;
+    }
+    .gamer-img{
+        margin-left: 70%;
+        width:auto;
+        height:50%
+    }
+    /* .gamer-text-content{
+        width:fit-content;
+        /* text-align: center;
+        margin-left: 40%; */
+        .gamer-description .gamer-text-content{
+        width:120vh;
+        text-align: center;
+        padding-left: 10%;
+     
+        
+    }
+    /* .purpose{
+        text-align: start;
+    } */
+    .gamer-text-content p{
+        text-align: center;
+        margin-left: 50%;
+
+    }
+   
+} 
