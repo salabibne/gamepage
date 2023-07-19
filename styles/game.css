@@ -350,7 +350,78 @@ text-align: center;
     margin-top: 10%;
 }
 
+.g-content{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+.g-content:hover{
+    border:3px solid rgb(217, 28, 91);
+    border-radius: 50px;
+    color:rgb(234, 72, 99);
+    padding:10px
+    
+}
 
+.games{
+    gap: 30px;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+footer{
+    width: 1400px;
+    margin:0 auto;
+    margin-top: 10px;
+    background-color: #0B0223;
+}
+.f-g{
+    color: #FFF;
+
+}
+.f-icon{
+    justify-content: center;
+
+}
+.f-p{
+   
+    margin-left: 20%;
+   
+    justify-content:center;
+   
+    align-items: center;
+    color: #FFF;
+    display: grid;
+      grid-template-columns: repeat(6,1fr); 
+}
+.media-icon .icon{
+    font-size: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.media-icon{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    margin-left:25%;
+    
+    /* justify-content:center;
+    align-items: center; */
+}
+
+.terms{
+    display:grid;
+    grid-template-columns: repeat(6,1fr); 
+    color: white;
+    margin-left: 30%;
+    
+}
+.last{
+    color:#fff;
+    text-align: center;
+}
 
 
 
@@ -454,14 +525,42 @@ text-align: center;
         bottom:-1050%;
     left:12%;
     display: block;
+    
     }
     .instant-img-two{
         bottom:-1050%;
     right:29%;
     display: block;
+   
     }
     .play-instant{
         width: 120vh;
         /* padding-left: 10%; */
     }
+    .g-content{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        align-items: center;
+        gap:15px;
+    }
+    .games{
+        width: 120vh;
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        /* flex-direction: column; */
+        gap: 10px;
+        /* margin-top: 40px;
+        margin-left: 150px; */
+        justify-content: center;
+        align-items: center;
+        /* display: flex; */
+        /* flex-wrap: wrap;
+        align-content: center;
+        justify-content: center; */
+    }
+    
+
+
 }
